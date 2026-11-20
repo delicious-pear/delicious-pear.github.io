@@ -1,0 +1,90 @@
+/* ===== 卓工2601班 · 现代科技风主题 ===== */
+
+/* ---- 品牌色（亮色模式） ---- */
+:root {
+  --vp-c-brand-1: #0ea5e9;
+  --vp-c-brand-2: #2563eb;
+  --vp-c-brand-3: #1d4ed8;
+  --vp-c-brand-soft: rgba(14, 165, 233, 0.14);
+
+  /* 首页 hero 标题渐变 */
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: linear-gradient(120deg, #0ea5e9 0%, #2563eb 45%, #7c3aed 100%);
+
+  /* 首页 hero 图片光晕 */
+  --vp-home-hero-image-background-image: linear-gradient(135deg, rgba(14, 165, 233, 0.35), rgba(124, 58, 237, 0.35));
+  --vp-home-hero-image-filter: blur(44px);
+
+  /* 强调色微调 */
+  --vp-custom-block-tip-border: transparent;
+  --vp-custom-block-tip-text: #0f172a;
+  --vp-custom-block-tip-bg: linear-gradient(120deg, rgba(14, 165, 233, 0.12), rgba(124, 58, 237, 0.08));
+}
+
+/* ---- 深色模式 ---- */
+.dark {
+  --vp-c-brand-1: #38bdf8;
+  --vp-c-brand-2: #60a5fa;
+  --vp-c-brand-3: #3b82f6;
+  --vp-c-brand-soft: rgba(56, 189, 248, 0.16);
+
+  --vp-home-hero-name-background: linear-gradient(120deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
+
+  --vp-home-hero-image-background-image: linear-gradient(135deg, rgba(56, 189, 248, 0.35), rgba(192, 132, 252, 0.35));
+
+  --vp-custom-block-tip-text: #e2e8f0;
+  --vp-custom-block-tip-bg: linear-gradient(120deg, rgba(56, 189, 248, 0.16), rgba(192, 132, 252, 0.10));
+}
+
+/* ---- 首页 hero 按钮微调 ---- */
+.VPHero .VPButton.brand {
+  background-image: linear-gradient(120deg, #0ea5e9, #2563eb);
+  border: none;
+}
+
+/* ---- 特性卡片（features）悬浮效果 ---- */
+.VPFeature {
+  border: 1px solid transparent;
+  border-radius: 12px;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.VPFeature:hover {
+  transform: translateY(-4px);
+  border-color: var(--vp-c-brand-soft);
+  box-shadow: 0 12px 30px -12px rgba(14, 165, 233, 0.45);
+}
+
+/* ---- 代码块圆角 ---- */
+.vp-doc div[class*='language-'] {
+  border-radius: 10px;
+}
+
+/* ---- FAQ 折叠块美化 ---- */
+.vp-doc details {
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+  margin: 0.75rem 0;
+  background: var(--vp-c-bg-soft);
+}
+
+.vp-doc details summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* ---- 滚动条（现代感） ---- */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #0ea5e9, #2563eb);
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
